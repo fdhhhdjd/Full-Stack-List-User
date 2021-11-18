@@ -12,7 +12,7 @@ app.use(cors());
 
 app.use("/", useRouters);
 app.get("/", (req, res) => res.send("Home FullStack"));
-app.all("*", (req, res) => res.send("Router doesn't exist"));
+app.all("*", (req, res) => res.send("Server Not Found 404"));
 app.listen(port, () =>
   console.log(`server is listening on port:http://localhost:${port}`)
 );

@@ -7,7 +7,7 @@ export const getUsers = (req, res) => {
 export const createUser = (req, res) => {
   const user = req.body;
   users.push({ ...user, id: uuid() });
-  res.send("User Add Success");
+  res.send("User Add Success!");
 };
 export const getUser = (req, res) => {
   const signedUser = users.filter((item) => item.id === req.params.id);
@@ -15,12 +15,12 @@ export const getUser = (req, res) => {
 };
 export const deleteUser = (req, res) => {
   users = users.filter((item) => item.id !== req.params.id);
-  res.send("user Delete Success");
+  res.send("User Delete Success!");
 };
 export const updateUser = (req, res) => {
   const user = users.find((item) => item.id === req.params.id);
   user.name = req.body.name;
   user.email = req.body.email;
   user.contact = req.body.contact;
-  res.send("User Edit Success");
+  res.send("User Edit Success!");
 };
