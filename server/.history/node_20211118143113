@@ -1,0 +1,2 @@
+use:cấu hình phần mềm,ính kèm với ngăn xếp phần mềm trung gian chính của ứng dụng, do đó, nó được sử dụng theo thứ tự được chỉ định bởi phần mềm trung gian
+all: đính kèm với bộ định tuyến của ứng dụng, do đó, nó được sử dụng bất cứ khi nào đạt đến phần mềm trung gian
